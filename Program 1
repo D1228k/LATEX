@@ -1,0 +1,425 @@
+PROGRAM 1 
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\begin{document}
+	\pagestyle{fancy}
+	\title{simple document}
+	\author{\textbf{srajan}\\ 4th Sem Department of Information Science \& Engineering\\ HKBK College of Engineering}
+	\fancyhead{}
+	\fancyhead[RO,RE]{\textbf{simple document}}
+	\fancyfoot{}
+	\fancyfoot[C]{\thepage}
+	\fancyfoot[LO,LE]{HKBK college of engineering}
+	\maketitle
+	\section{what is GNU?}
+	GNU stands for  It's a recursive acronym that represents a Unix-like operating system developed by the GNU Project, initiated by Richard Stallman in 1983. GNU is free software, meaning users have the freedom to run, study, distribute, and modify it. It forms the basis for many popular operating systems, including GNU/Linux distribution.
+	\section {more about gnu}
+	Certainly! GNU is a project initiated by Richard Stallman in 1983 with the goal of creating a complete Unix-like operating system that is entirely free software. The term highlighting the project's aim to develop an operating system compatible with Unix but distinct from it, both in terms of its technical aspects and its licensing philosophy.
+	\section{What Is Free Document?}
+	The free software movement campaigns to win for the users of computing the freedom that comes from free software. Free software puts its users in control of their own computing. Non free software puts its users under the power of the software’s developed.
+	\section{What is free software?}
+	Free software is a matter of liberty, not price. To understand the concept, you should think of ”free” as in ”free speech,” not as in ”free beer”. More precisely, free software means users of
+	a program have the four essential freedoms:
+	\begin{itemize}
+		\item 
+	\end{itemize}
+\end{document}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 2 
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
+\begin {document}
+\thispagestyle{plain}
+\begin{center}
+\Large
+\textbf{About Latex}\\
+\vspace{0.4cm}
+\large
+Abstract/Summary\\
+\vspace{0.4cm}
+\textbf{Srajan}
+\end {center}
+\vspace{0.9cm}
+\textbf{Abstract}
+\vspace{0.4cm}
+Abstract concepts are ideas or concepts that are not tangible or physical in nature. They often represent qualities, relationships, or phenomena that exist in thought or theory rather than in reality. Examples of abstract concepts include love, justice, happiness, and truth. These concepts are subjective and can vary in meaning depending on individual perspectives and cultural contexts.
+
+\vspace{0.9cm}
+\textbf{Summary}
+\vspace{0.4cm}
+A summary is a condensed version of a longer piece of text, speech, or event that captures its main points or essential information. It aims to provide a clear and concise overview without including unnecessary details. Summaries are useful for quickly understanding the key ideas of a document or presentation, making them valuable for study, research, and communication purposes. 
+\end{document}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 5 
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{array}
+\begin{document}
+	\centering
+	\listoftables
+	\vspace{5pt}
+	The table
+	\ref{table:1} is an example of referenced \LaTeX{ } elements.
+	\pagestyle{fancy}
+	\title{Creating Simple Table}
+	\author {CHARAN G GOWDA \\4th sem Department of Information Science \&Engineering\\HKBK College of Engineering,Nagwara,Bengaluru-560045}
+	\fancyfoot[C]{\thepage}
+	\maketitle
+	\section{Table Demo}
+	\subsection{Simple Table without Border}
+	The tabular environment is the default LATEX method to create tables. You must specify a parameter to this environment;here we use {c c c} which tells LATEX there are three columns and the text inside each one of them must be centred.
+	\begin{table}[h!]
+		\begin{center}
+			\begin{tabular} {c c c} 
+				cell1 & cell2 & cell3 \\
+				cell4 & cell5 & cell6 \\
+				cell7 & cell8 & cell9 \\
+			\end{tabular} 
+			\caption{Table without Border}
+			\label{table:1}
+		\end{center}
+		
+		\subsection{Simple Table with border}
+		\begin{center}
+			\begin{tabular}{|c|c|c|}
+				\hline
+				cell1 & cell2 & cell3 \\
+				cell4 & cell5 & cell6 \\
+				cell7 & cell8 & cell9 \\
+				\hline
+			\end{tabular}
+			\caption{Table with Border}
+			\label{table:2}
+		\end{center}
+		
+		\subsection{Tables with a fixed width }
+		\begin{center}
+			\begin{tabular}{ |m{5em} | m{1cm}| m{1cm}|}
+				\hline
+				cell1  dummy text   dummy text  dummy text & cell2 & cell3 \\
+				\hline
+				cell4  dummy text  dummy text  dummy text & cell5 & cell6 \\
+				\hline
+				cell7 & cell8 & cell9 \\
+				\hline
+			\end{tabular}
+			\caption{Table with a fixed width}
+			\label{table:3}
+		\end{center}
+	\end{table}
+\end{document}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 6
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\begin{document}	
+	\section*{Subfigure Demo} 
+	\begin{figure}[h]
+		\centering
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\includegraphics[width=4cm]{C:/Users/SRAJAN/Desktop/youtube channel/graph1.png} 
+			\caption{$y=x$}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\includegraphics[width=4cm]{C:/Users/SRAJAN/Desktop/youtube channel/graph2.png}
+			\caption{$y=3\sin x$}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.3\textwidth}
+			\centering
+			\includegraphics[width=4cm]{C:/Users/SRAJAN/Desktop/youtube channel/graph3.png}
+			\caption{$y=5/x$}
+		\end{subfigure}
+		\caption{Three simple graphs arranged side-by-side}
+		\label{fig:three graphs}
+	\end{figure}
+	
+\end{document}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 7 
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,nccmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\begin{document}
+	\title{Mathematical Equations in LaTeX}
+	\author{SRAJAN (1HK22IS108) \\ Student of ISE B\\ Department of Information Science and Engineering\\ HKBK College of Engineering, Bengaluru - 560045}
+	\fancyfoot[C]{\thepage}
+	\maketitle
+	\section{Insertion of Mathematics Equation}
+	\subsection{Display math mode}
+	The mass-energy equivalence is described by the famous equation
+	\[E=mc^2\]
+	discovered in 1905 by Albert Einstein. In natural units ($c$= 1), the formula expresses the identity
+	\begin{equation}
+		E=m
+	\end{equation}
+	This is a simple math expression \(\sqrt{x^2+1}\) inside text. 
+	And this is also the same: 
+	\begin{math}
+		\sqrt{x^2+1}
+	\end{math}
+	but by using another command.
+	This is a simple math expression without numbering
+	\begin{equation}
+		\sqrt{x^2+1} 
+	\end{equation}
+	separated from text.
+	This is also the same:
+	\begin{displaymath}
+		\sqrt{x^2+1}
+	\end{displaymath}
+	\ldots and this:
+	\begin{equation}
+		\sqrt{x^2+1}
+	\end{equation}
+	\section{Insertion of Equation}
+	\subsection{Equation 1}
+	\begin{fleqn}
+		\[x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}\]
+		\[= \frac{-2 \pm \sqrt{2^{2}-4*(1)*(-8)}}{2*1}\]
+		\[= \frac{-2 \pm \sqrt{4+32}}{2}\]
+	\end{fleqn}
+	\subsection{Equation 2}
+	\begin{equation}
+		\mathcal{L}^{-1}\{F(s)\} = f(t)
+	\end{equation}
+	\begin{fleqn}
+		\begin{align*}
+			F(s) &= \frac{1}{s^2 + s + 1} \\
+			\mathcal{L}^{-1}\{F(s)\} &= \mathcal{L}^{-1}\left\{\frac{1}{s^2 + s + 1}\right\} \\
+			&= e^{-t/2} \sin\left(\frac{\sqrt{3}}{2} t\right)
+		\end{align*}
+	\end{fleqn}
+\end{document}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 8 
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{amsthm}
+\usepackage{fancyhdr}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\begin{document}
+	\title{\textbf{Numbered theorems, definitions, corollaries and lemmas}}
+	\author{\textbf{SUDHIKSH (1HK22IS112)} \\ Department of Information Science and Engineering\\ HKBK College of Engineering, Bengaluru - 560045}
+	\fancyfoot[C]{\thepage}
+	\maketitle
+	\section{Introduction to Theorems \&\ Corollaries}
+	Numbered environments in LaTeX can be defined by means of the command $newtheorem$ which takes two arguments:
+	Theorems can easily be defined:
+	\begin{theorem}
+		Let \(f\) be a function whose derivative exists in every point, then \(f\) is 
+		a continuous function.
+	\end{theorem}
+	\begin{theorem}[Pythagorean theorem]
+		\label{pythagorean}
+		This is a theorem about right triangles and can be summarised in the next 
+		equatio 
+		\[ x^2 + y^2 = z^2 \]
+	\end{theorem}
+	\begin{corollary}
+		There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+	\end{corollary}.
+	\section{Introduction to Definition}
+	A feature that is important when working in a mathematical document  definitions from theorems by its formatting.
+	\begin{definition}[Fibration]
+		A fibration is a mapping between two topological spaces that has the homotopy lifting property for every space \(X\).
+	\end{definition}
+	\begin{definition}[Absolute value function] 
+		The absolute value function can be specified as a two-part definition as follows: \\
+		$
+		|x| =
+		\left\{
+		\begin{array}{ll}
+			x  & \mbox{if } x \geq 0 \\
+			-x & \mbox{if } x < 0
+		\end{array}
+		\right.
+		$
+	\end{definition}
+	
+	\section{Introduction to Lemma \&\ Proof}
+	 The first argument \{lemma\} specifies the name of the environment to be used in the document, and the second argument \{Lemma\} is the heading text that will be displayed whenever a lemma is referenced.
+	\begin{lemma}
+		Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+		real number \(r\) such that \(b=ra\).
+	\end{lemma}
+	
+	\begin{proof}
+		To prove it by contradiction try and assume that the statement is false,
+		proceed from there and at some point you will arrive to a contradiction.
+	\end{proof}
+\end{document}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 9 
+
+
+\documentclass{article}
+\usepackage{graphicx} 
+
+
+\begin{document}
+	
+	\title{Sample Document with IEEE References}
+	\author{\textbf{SRAJAN (1HK22IS108)} \\ Student of ISE B\\ Department of Information Science and Engineering\\ HKBK College of Engineering, Bengaluru - 560045} 
+	\maketitle
+	
+	\section{Introduction}
+	
+	 Requests Allocation~(JSR) domain, research work mainly uses the  optimization\cite{hardtoshare}.
+	 
+	 Lyapunov optimization \cite{dataintensive}.
+	 
+	 stochastic optimization, replication of services to achieve high reliability \cite{edgeuav}.
+	 
+	 request demand is known before the run. \cite{edgeuncertainty}.
+	 
+	 Using the forecasting method also, we can not predict the impact of uncertain events on the requests.
+	
+	\bibliographystyle{IEEEtran}
+	\bibliography{pg9.bib}
+\end{document}
+
+PROGRAM 9.BIB
+
+@INPROCEEDINGS{hardtoshare,
+	author={He, Ting and Khamfroush, Sebastian},
+	title={It's Hard to Share}
+	year={2018},
+
+}
+
+@INPROCEEDINGS{dataintensive,
+	author={Farhadi, Vajiheh and Mehmeti, Fidan and He, Ting and Porta, Tom La and Khamfroush, Hana and Wang, Shiqiang and Chan, Kevin S},       
+	title={Service Placement and Request Scheduling }
+
+}
+
+@article{edgeuncertainty,
+	author = {Xu, Xiaolong and Cao, Hao and Geng, Qingfan and Liu, Xihua and Dai, Fei and Wang, Chuanjian},
+	title = {Dynamic resource provisioning for workflow scheduling under uncertainty in edge computing environment}.
+
+}
+
+@ARTICLE{edgeuav, 
+	 author={Qu, Yuben and Dai, Song and Wu, Qihui},
+	   title={Service Provisioning for UAV-Enabled Mobile Edge Computing}, 
+	   year={2021}.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 10 
+
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\begin{document}
+	
+	\title{Organization Hierarchy Diagram}
+
+	
+	\section{Hierarchy Diagram}
+	
+	\begin{center}
+		\begin{tikzpicture}[
+			level 1/.style={sibling distance=40mm},
+			level 2/.style={sibling distance=20mm},
+			edge from parent/.style={->,draw},
+			>=latex]
+			
+			% Root node
+			\node {Organization}
+			% Level 2 nodes
+			child {node {Department A}
+				child {node {Team 1}}
+				child {node {Team 2}}
+				child {node {Team 3}}
+			}
+			child {node {Department B}
+				child {node {Team 4}}
+				child {node {Team 5}}
+			}
+			child {node {Department C}
+				child {node {Team 6}}
+				child {node {Team 7}}
+				child {node {Team 8}}
+			};
+		\end{tikzpicture}
+	\end{center}
+	
+\end{document}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PROGRAM 11
+
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+	\begin{algorithm}
+		\caption{Find Maximum Value}
+		\begin{algorithmic}[1]
+			\REQUIRE $A$ is a list of $n$ numbers
+			\ENSURE $max\_value$ is the maximum number in the list
+			\STATE $max\_value \leftarrow A[1]$
+			\FOR{$i \leftarrow 2$ to $n$}
+			\IF{$A[i] > max\_value$}
+			\STATE $max\_value \leftarrow A[i]$
+			\ENDIF
+			\ENDFOR
+			\RETURN $max\_value$
+		\end{algorithmic}
+	\end{algorithm}
+\end{document}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
